@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    
+</head>
+<body>
+    <div class="app">
+    <div class="side-container">
+        <div class="top-container">            
+            <img src="Logo.png"  alt="logo" class="logo" />
+            
+        <ul class="list-container">
+            <li class="list-item active" onclick="dashboard()">
+                <img src="icons/dashboard-off.png" id="dashboardImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="dashboard">Dashboard</h1>
+            </li>
+            <li class="list-item" onclick="invoices()" id="invoicesListItem">
+                <img src="icons/invoice-off.png" id="invoicesImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="invoices">Invoices</h1>
+            </li>
+            <li class="list-item" id="proposalsListItem" onclick="proposals()">
+                <img src="icons/proposals-off.png" id="proposalsImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="proposals">Proposals</h1>
+            </li>
+            <li class="list-item" id="servicesListItem" onclick="services()">
+                <img src="icons/services-off.png" id="servicesImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="services">Services</h1>
+            </li>
+            <li class="list-item" id="transactionListItem" onclick="transactions()">
+                <img src="icons/transactions-off.png" id="transactionsImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="transactions">Transactions</h1>
+            </li>
+            <li class="list-item" id="projectsListItem" onclick="projects()">
+                <img src="icons/projects-off.png" id="projectsImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="projects">Projects</h1>
+            </li>
+            <li class="list-item" id="customersListItem" onclick="customers()">
+                <img src="icons/customers.png" id="customersImage" class="icon-image" /> 
+                <h1 class="list-item-heading" id="customers">Customers</h1>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bottom-logout-container">
+        <ul class="list-container">
+    <li class="list-item">
+        <img src="icons/settings-off.png" class="icon-image" /> 
+        <h1 class="list-item-heading">Settings</h1>
+    </li>
+    <li class="list-item">
+        <img src="icons/logout-off.png" class="icon-image" /> 
+        <h1 class="list-item-heading">Logout</h1>
+    </li>
+</ul>
+</div>
+        
+            </div>
+    <div class="container">    
+        <div class="content-container">
+            <div class="content-profile-container">
+                <div class="profile">
+                <h1 class="heading">Hi, Welcome back <span class="span-heading">Robert!</span></h1>
+                <div class="profile-user-container">
+                    <div class="search-container">
+                        <img src="icons/search.png" alt="search" class="search-icon" />
+                        <input type="text" placeholder="Search..." class="search-input" />
+                    </div>
+                    <div class="notification-container">
+                        <img src="icons/notifications.png" alt="notifications" class="notification-icon" />
+                    </div>
+                    <img src="avatars/Ellipse 3.png" alt="avatar" class="avatar-image" />
+                    
+                </div>
+            </div>
+            </div>
+            <div class="finance-container">
+                <h1 class="finance-heading">Finance Overview</h1>
+                <div class="finance-card-container">
+                    <div class="card">
+                        <h1 class="money">$ 2,77,120</h1>
+                        <p class="card-paragraph">Sales</p>
+                        <img src="icons/insights.png" alt="insights" class="card-icon" />
+                    </div>
+                    <div class="card">
+                        <h1 class="money">$ 60,100</h1>
+                        <p class="card-paragraph">Expences</p>
+                        <img src="icons/Expense.png" alt="insights" class="card-icon" />
+                    </div>
+                    <div class="card">
+                        <h1 class="money">$ 57,230</h1>
+                        <p class="card-paragraph">Profit</p>
+                        <img src="icons/Profit.png" alt="insights" class="card-icon" />
+                    </div>
+                    <div class="card">
+                        <h1 class="money">$ 1,60,124</h1>
+                        <p class="card-paragraph">Income</p>
+                        <img src="icons/Income.png" alt="insights" class="card-icon" />
+                    </div>
+                </div>
+            </div>
+            <div class="projects-table-container">
+                <div class="current-project-container"><h1 class="current-project-heading">Current Projects</h1>
+                    <button type="button" class="create-button">Create</button>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading">ProjectName</p>
+                    <p class="table-heading">Customer</p>
+                    <p class="table-heading">Sent Date</p>
+                    <p class="table-heading">Amount</p>
+                    <p class="table-heading"></p>
+                </div>
+                <hr />
+                <div class="project-table">
+                    <p class="table-heading gap">Travel App Design</p>
+                    <p class="table-heading gap">Jacob Jones</p>
+                    <p class="table-heading gap">28 Cct 2022</p>
+                    <p class="table-heading gap">$ 240.90</p>
+                    <p class="sent">SENT</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">UX Research for Event Management app</p>
+                    <p class="table-heading gap">Wade Warren</p>
+                    <p class="table-heading gap">18 Oct 2022</p>
+                    <p class="table-heading gap">$ 120.00</p>
+                    <p class="draft">DRAFT</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">Redesign food delivery app</p>
+                    <p class="table-heading gap">Annette black</p>
+                    <p class="table-heading gap">15 Oct 2022</p>
+                    <p class="table-heading gap">$ 351.00</p>
+                    <p class="paid">PAID</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">Web App Online Learning</p>
+                    <p class="table-heading gap">Cameron Williamson</p>
+                    <p class="table-heading gap">15 Oct 2022</p>
+                    <p class="table-heading gap">$ 240.90</p>
+                    <p class="paid">PAID</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">Railway web casestudy</p>
+                    <p class="table-heading gap">Robert Fox</p>
+                    <p class="table-heading gap">13 Oct 2022</p>
+                    <p class="table-heading gap">$ 153.00</p>
+                    <p class="sent">SENT</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">Responsive web design</p>
+                    <p class="table-heading gap">Floyd Miles</p>
+                    <p class="table-heading gap">06 Oct 2022</p>
+                    <p class="table-heading gap">$ 140.90</p>
+                    <p class="rejected">REJECTED</p>
+                </div>
+                <div class="project-table">
+                    <p class="table-heading gap">Music app design</p>
+                    <p class="table-heading gap">Theresa webb</p>
+                    <p class="table-heading gap">04 Oct 2022</p>
+                    <p class="table-heading gap">$ 345.90</p>
+                    <p class="draft">DRAFT</p>
+                </div>
+            </div>
+            <div class="event-container">
+                <h1 class="events-heading">Events</h1>
+                <ul class="events-list-container">
+                    <li class="event-list-item">
+                        <div class="event-profile-container">
+                            <img src="avatars/Ellipse 45.png" alt="image" class="event-icon" />
+                            <div clas="event-profile-details-container">
+                                <h1 class="event-profile-heading">Wade Warren</h1>
+                                <p class="event-profile-detials"><span class="event-profile-details-span">Birthday -</span> Today</p>
+                            </div>
+                        </div>
+                        <button type="button" class="wishing">Wish</button>
+                    </li>
+                    <li class="event-list-item">
+                        <div class="event-profile-container">
+                            <img src="avatars/Ellipse 46.png" alt="image" class="event-icon" />
+                            <div clas="event-profile-details-container">
+                                <h1 class="event-profile-heading">Wade Warren</h1>
+                                <p class="event-profile-detials"><span class="event-profile-details-span">Jioning Us -</span> Today</p>
+                            </div>
+                        </div>
+                        <button type="button" class="congratulations">Congratulations</button>
+                    </li>
+                    <li class="event-list-item">
+                        <div class="event-profile-container">
+                            <img src="avatars/Ellipse 47.png" alt="image" class="event-icon" />
+                            <div clas="event-profile-details-container">
+                                <h1 class="event-profile-heading">Wade Warren</h1>
+                                <p class="event-profile-detials">Work Anniversary - 7 September 2022</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event-list-item">
+                        <div class="event-profile-container">
+                            <img src="avatars/Ellipse 45.png" alt="image" class="event-icon" />
+                            <div clas="event-profile-details-container">
+                                <h1 class="event-profile-heading">Wade Warren</h1>
+                                <p class="event-profile-detials">Work Anniversary - 7 September 2022</p>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
